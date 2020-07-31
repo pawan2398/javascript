@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html
+<head>
+    <title>
+        javascript programming
+    </title>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+</head>
+
+    <body>
+
+    <h1>programming</h1>
+    <h2>javascript</h2>
+    <h3>hello world</h3>
+    <h4>hello js </h4>
+    <script src= "variable.js">
+    </script>
+    <script src="datatypes.js">
+    </script>
+    <script src="arrays.js">
+    </script>
+    <script src="object.js">
+    </script>
+    <script src="function.js">
+    </script>
+    <script src="condition.js">
+    </script>
+    <script src="whileloop.js">
+    </script>
+    <script src="forloop.js"></script>
+    <script src="switch.js"></script>
+    <script>
+        document.getElementById("demo").innerHTML=10 +20 ;
+        document.write(100 + 200);
+        window.alert(15 + 25);
+        console.log("hello folks, good morning");
+        console.log(123 + 321);
+
+        var x, y, z;
+        x=5;
+        y=6;
+        z = x + y;
+
+        document.getElementById("demo").innerHTML = "the value of z is :" + z;
+        document.write( "the value of z is:" + z );
+        console.log(x + y);
+
+        var x =10;
+        document.write(x);
+        console.log(x);
+        console.log(typeof(x));
+        
+    </script>
+    <script>
+        var firstname, lastname;
+        firstname="java";
+        lastname="script";
+        document.getElementById("demo1").innerHTML = firstname + lastname;
+        document.write(firstname + lastname);
+
+
+    </script>
+
+   
+
+    </body>
+
+</html>
+
+
+#Functions in javascript
+
+function hello() {
+    console.log("hello world from javascript");
+    console.log("prog is fun");
+    console.log("world is flat");
+
+}
+
+hello();
+
+
+function number(num){
+    console.log("number is " + num);
+
+}
+
+number(114);
+
+
+function product(a, b){
+    return a*b;
+}
+
+let j=product(2,2);
+console.log(j);
+
+function multiply(num, _num){
+    console.log(num*_num);
+}
+multiply(15,15);
+
+#Conditions in javaScript
+
+let number1= [];
+number1= [1, 2, 3, 1, ,1, 2,];
+if (number1[0] == number1[1]){
+    console.log("if block executes and value is 1");
+
+} else{
+    console.log("else block execute");
+}
+
+
+
+if(number1[0]==number1[2]){
+    console.log("if block also ececutes");
+}else if(number1[1]==number1[5]){
+    console.log("elseif executes");
+
+}else{
+    console.log("final executes")
+
+}
+
+#Arrays in javascript
+
+let shopping=[];
+shopping = ["jeans", "shirt", "shoes", 500];
+console.log(shopping);
+console.log(shopping[0]);
+console.log(shopping[1]);
+console.log(shopping[2]);
+console.log(shopping[3]);
+
+
+let lst=[];
+lst = ["dell", "lenovo", "acer", "hp"];
+console.log(lst);
+console.log(lst[0]);
+console.log(lst[1]);
+console.log(lst[2]);
+console.log(lst[3]);
+    
+
+let numbers=[]
+numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(numbers[0]);
+console.log(numbers[1]);
+console.log(numbers[2]);
+console.log(numbers[3]);
+console.log(numbers[4]);
+console.log(numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4]);
+console.log(numbers.sort());
+console.log(numbers.push(6));
+console.log(numbers.push(7));
+
+console.log(numbers.pop(6));
+console.log(numbers);
+
+let mix=["pawan", 23, "kumar"];
+console.log(typeof(mix));
+
+#datatypes in javascript
+let name = "harry potter"
+let d = 10;
+console.log(name);
+console.log(a);
+console.log(typeof(a));
+console.log(typeof(name));
+
+
+// boolean 
+
+let option = true;
+let height;
+
+console.log(option);
+console.log(typeof(option));
+console.log(height);
+
+#for loop in javascript
+
+let v ;
+for(v=1;v<6;v++){
+    console.log(v);
+}
+
+#objects in javascript
+
+let pen = {
+    type:'watermark',
+    color:'blue',
+    cost: 10,
+};
+ 
+console.log(pen);
+console.log(pen.type,pen.color,pen.cost);
+
+
+
+
+let pawan={
+    email:"pawan@hotmail.com",
+    age:25,
+    school:"zphs",
+
+    subject:["physics", "chem", "maths"]
+
+
+};
+
+console.log(pawan.subject[1], pawan.age,pawan.email,pawan.school);
+
+
+#switch condition in javascript
+
+let game="cricket";
+switch(game){
+    case "football":
+     console.log("i love football");
+    break;
+    case "basketball":
+    console.log("i love basketball");
+    break;
+    case "cricket":
+    console.log("i love cricket");
+    break;
+    case "throwball":
+    console.log("i love throwball");
+    break;
+    default:
+    console.log("i love to play other games");
+    break;
+
+}
+
+#variables in javascript
+console.log("hello world");
+
+let p = 100;
+let q = "pawan";
+console.log(p);
+console.log(typeof(p));
+
+console.log(q);
+console.log(typeof(q));
+
+let a = 100;
+let b = 200;
+console.log(a + b);
+console.log(a * b);
+console.log(a / b);
+console.log(a - b);
+console.log(a % b);
+
+// keyword => const variable -name -value
+
+const c = 35;
+
+
+console.log(c);
+
+#whileloop
+let i= 0;
+while (i < 5){
+    console.log(" the number is :" +i);
+    i++;
+}
+
+do{
+    console.log("the number is " + i);
+    i++;
+}
+while (i < 5);
+
+
+#DOM in javascript 
+#introduction to DOM
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+document.write("hello world");
+console.log("hello world");
+</script>
+
+</body>
+</html>
